@@ -1,0 +1,27 @@
+# config.yml
+
+nChannel: 8 # parameter from the network, default value 100
+nConv: 2 # parameter from the network
+
+epoch: 50 # number of epochs, default value 1
+maxUpdate: 10 # number of loops per iteration, default value 1000
+batch_size: 64 # batch_size, default value 1
+
+lr: 0.0001 # learning rate, default value 0.1 
+minLabels: 8 # minimum number of labels, default value 3
+
+# loss function
+stepsize_sim: 1 # for the loss-function, default value 1
+stepsize_con: 5 # for the loss-function, default value 5
+
+# imsize
+imsize: [224,224] # image size, default value [224,224]
+
+
+# input and output
+input: /home/admin1/student1/Joel/dataset # file for the input
+model_safename: testmodel # safe the model with this name
+model_load_path: /home/admin1/student1/Joel/dataset/testmodel.pth # load the model for testing from this path
+
+# mode
+mode: test_dataset # if mode = test_dataset, the mask is only generated for the test images, if mode = train_dataset the mask is generated for the hole training images
